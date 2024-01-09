@@ -13,7 +13,7 @@ class ChipStyle {
 
   const ChipStyle({
     this.size,
-    this.background = const Color.fromRGBO(171, 124, 230, 1),
+    this.background = const Color(0XFFAB7CE6),
     this.color,
     this.isHexagon,
     this.drawHexagon,
