@@ -9,7 +9,7 @@ import 'package:navbar/navbar/bottombar.dart';
 import 'package:navbar/navbar/styles/chipstyle.dart';
 import 'package:navbar/navbar/tab_item.dart';
 
-const List<TabItem> items = [
+const List<TabItem> studentItems = [
   TabItem(
     icon: Icons.sports_basketball_outlined,
     title: 'Drills',
@@ -21,6 +21,21 @@ const List<TabItem> items = [
   TabItem(
     icon: Icons.show_chart,
     title: 'Progress',
+  ),
+  TabItem(
+    icon: Icons.person_outline_sharp,
+    title: 'Me',
+  ),
+];
+
+const List<TabItem> coachItems = [
+  TabItem(
+    icon: Icons.chat_bubble_outline,
+    title: 'Chat',
+  ),
+  TabItem(
+    icon: Icons.group,
+    title: 'Team',
   ),
   TabItem(
     icon: Icons.person_outline_sharp,
@@ -71,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: _buildPage(visit),
       ),
       bottomNavigationBar: BottomBarInspiredInside(
-        items: items,
+        items: studentItems,
         backgroundColor: bgColor,
         color: color2,
         colorSelected: Colors.white,
